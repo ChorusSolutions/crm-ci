@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <FileToPath map="*.jpg" to="..\Dynamics.Consent.Click.WebResources\Webresources\img\" />
+  <FileToPath map="*.png" to="..\Dynamics.Consent.Click.WebResources\Webresources\img\" />
+  <FileToPath map="*.gif" to="..\Dynamics.Consent.Click.WebResources\Webresources\img\" />
+  <FileToPath map="*.js" to="..\Dynamics.Consent.Click.WebResources\Webresources\js\" />
+  <FileToPath map="*.html" to="..\Dynamics.Consent.Click.WebResources\Webresources\html\" />
+  <FileToPath map="*.css" to="..\Dynamics.Consent.Click.WebResources\Webresources\css\" />
+  <FileToFile map="DynamicsConsentClickWorkflows.dll" to="..\Dynamics.Consent.Click.Workflows\bin\**\Dynamics.Consent.Click.Workflows.dll" />
+</Mapping>

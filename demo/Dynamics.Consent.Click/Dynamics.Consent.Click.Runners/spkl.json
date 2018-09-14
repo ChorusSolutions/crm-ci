@@ -1,0 +1,73 @@
+{
+  "webresources": [
+    {
+      "root": "",
+      "files": [
+      
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "profile": "default,debug",
+      "assemblypath": "..\\Dynamics.Consent.Click.Workflows\\bin\\Release"
+    },
+    {
+      "profile": "default,debug",
+      "assemblypath": "..\\Dynamics.Consent.Click.Plugins\\bin\\Release"
+    }
+  ],
+  "solutions": [
+    {
+      "profile": "release",
+      "solution_uniquename": "CommunicationConsentClickAdapter",
+      "packagepath": "..\\Dynamics.Consent.Click.Solution\\managed",
+      "solutionpath": "CommunicationConsentClickAdapter_managed.zip",
+      "packagetype": "managed",
+      "increment_on_import": false,
+      "map": [
+        //{
+        //  "map": "file",
+        //  "from": "DynamicsConsentClickWorkflows.dll",
+        //  "to": "..\\..\\Dynamics.Consent.Click.Workflows\\bin\\Release\\PGOnline.Workflows.dll"
+        //}
+        {
+          "map": "file",
+          "from": "DynamicsConsentClickPlugins.dll",
+          "to": "..\\..\\Dynamics.Consent.Click.Plugins\\bin\\Release\\PGOnline.Plugins.dll"
+        }
+        //,
+        //{
+        //  "map": "folder",
+        //  "from": "WebResources\\chorus_",
+        //  "to": "..\\..\\Dynamics.Consent.Click.WebResources\\Webresources\\chorus_\\"
+        //}
+      ]
+    },
+    {
+      "profile": "debug",
+      "solution_uniquename": "CommunicationConsentClickAdapter",
+      "packagepath": "..\\Dynamics.Consent.Click.Solution\\unmanaged",
+      "solutionpath": "CommunicationConsentClickAdapter.zip",
+      "packagetype": "unmanaged",
+      "increment_on_import": false,
+      "map": [
+        //{
+        //  "map": "file",
+        //  "from": "DynamicsConsentClickWorkflows.dll",
+        //  "to": "..\\..\\Dynamics.Consent.Click.Workflows\\bin\\Debug\\PGOnline.Workflows.dll"
+        //}
+        {
+          "map": "file",
+          "from": "DynamicsConsentClickPlugins.dll",
+          "to": "..\\..\\Dynamics.Consent.Click.Plugins\\bin\\Debug\\PGOnline.Plugins.dll"
+        }
+        //{
+        //  "map": "folder",
+        //  "from": "WebResources\\chorus_",
+        //  "to": "..\\..\\Dynamics.Consent.Click.WebResources\\Webresources\\chorus_\\"
+        //}
+      ]
+    }
+  ]
+}

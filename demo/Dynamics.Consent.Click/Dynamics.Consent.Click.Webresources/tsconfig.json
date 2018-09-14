@@ -1,0 +1,11 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "Webresources/js",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "include": [
+    "ts/**/*"
+  ]
+}

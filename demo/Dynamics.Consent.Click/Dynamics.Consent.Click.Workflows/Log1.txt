@@ -1,0 +1,4 @@
+15:21:56	Downloading Plugin/Workflow Activity Metadata
+15:21:56	Searching for classes in 'C:\Repos\CommConsentCD\Dynamics.Consent.Click\Dynamics.Consent.Click.Workflows'
+15:22:02	Found Workflow Activity Type Registration Dynamics.Consent.Click.Workflows.TemplateRetriever
+15:22:02	1 classes decorated with deployment attributes!

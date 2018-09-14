@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-alpha/dist/katex.min.css" integrity="sha384-BTL0nVi8DnMrNdMQZG1Ww6yasK9ZGnUxL1ZWukXQ7fygA1py52yPp9W4wrR00VML" crossorigin="anonymous">
+        <style>
+/*--------------------------------------------------------------------------------------------- * Copyright (c) Microsoft Corporation. All rights reserved. * Licensed under the MIT License. See License.txt in the project root for license information. *--------------------------------------------------------------------------------------------*/ body { font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback"; font-size: 14px; padding: 0 26px; line-height: 22px; word-wrap: break-word; } #code-csp-warning { position: fixed; top: 0; right: 0; color: white; margin: 16px; text-align: center; font-size: 12px; font-family: sans-serif; background-color:#444444; cursor: pointer; padding: 6px; box-shadow: 1px 1px 1px rgba(0,0,0,.25); } #code-csp-warning:hover { text-decoration: none; background-color:#007acc; box-shadow: 2px 2px 2px rgba(0,0,0,.25); } body.scrollBeyondLastLine { margin-bottom: calc(100vh - 22px); } body.showEditorSelection .code-line { position: relative; } body.showEditorSelection .code-active-line:before, body.showEditorSelection .code-line:hover:before { content: ""; display: block; position: absolute; top: 0; left: -12px; height: 100%; } body.showEditorSelection li.code-active-line:before, body.showEditorSelection li.code-line:hover:before { left: -30px; } .vscode-light.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(0, 0, 0, 0.15); } .vscode-light.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(0, 0, 0, 0.40); } .vscode-light.showEditorSelection .code-line .code-line:hover:before { border-left: none; } .vscode-dark.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(255, 255, 255, 0.4); } .vscode-dark.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(255, 255, 255, 0.60); } .vscode-dark.showEditorSelection .code-line .code-line:hover:before { border-left: none; } .vscode-high-contrast.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(255, 160, 0, 0.7); } .vscode-high-contrast.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(255, 160, 0, 1); } .vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before { border-left: none; } img { max-width: 100%; max-height: 100%; } a { text-decoration: none; } a:hover { text-decoration: underline; } a:focus, input:focus, select:focus, textarea:focus { outline: 1px solid -webkit-focus-ring-color; outline-offset: -1px; } hr { border: 0; height: 2px; border-bottom: 2px solid; } h1 { padding-bottom: 0.3em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; } h1, h2, h3 { font-weight: normal; } h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { font-size: inherit; line-height: auto; } table { border-collapse: collapse; } table > thead > tr > th { text-align: left; border-bottom: 1px solid; } table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td { padding: 5px 10px; } table > tbody > tr + tr > td { border-top: 1px solid; } blockquote { margin: 0 7px 0 5px; padding: 0 16px 0 10px; border-left-width: 5px; border-left-style: solid; } code { font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback"; font-size: 14px; line-height: 19px; } body.wordWrap pre { white-space: pre-wrap; } .mac code { font-size: 12px; line-height: 18px; } pre:not(.hljs), pre.hljs code > div { padding: 16px; border-radius: 3px; overflow: auto; } /** Theming */ pre code { color: var(--vscode-editor-foreground); } .vscode-light pre:not(.hljs), .vscode-light code > div { background-color: rgba(220, 220, 220, 0.4); } .vscode-dark pre:not(.hljs), .vscode-dark code > div { background-color: rgba(10, 10, 10, 0.4); } .vscode-high-contrast pre:not(.hljs), .vscode-high-contrast code > div { background-color: rgb(0, 0, 0); } .vscode-high-contrast h1 { border-color: rgb(0, 0, 0); } .vscode-light table > thead > tr > th { border-color: rgba(0, 0, 0, 0.69); } .vscode-dark table > thead > tr > th { border-color: rgba(255, 255, 255, 0.69); } .vscode-light h1, .vscode-light hr, .vscode-light table > tbody > tr + tr > td { border-color: rgba(0, 0, 0, 0.18); } .vscode-dark h1, .vscode-dark hr, .vscode-dark table > tbody > tr + tr > td { border-color: rgba(255, 255, 255, 0.18); } 
+</style>
+<style>
+/* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */ /* Tomorrow Comment */ .hljs-comment, .hljs-quote { color: #8e908c; } /* Tomorrow Red */ .hljs-variable, .hljs-template-variable, .hljs-tag, .hljs-name, .hljs-selector-id, .hljs-selector-class, .hljs-regexp, .hljs-deletion { color: #c82829; } /* Tomorrow Orange */ .hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link { color: #f5871f; } /* Tomorrow Yellow */ .hljs-attribute { color: #eab700; } /* Tomorrow Green */ .hljs-string, .hljs-symbol, .hljs-bullet, .hljs-addition { color: #718c00; } /* Tomorrow Blue */ .hljs-title, .hljs-section { color: #4271ae; } /* Tomorrow Purple */ .hljs-keyword, .hljs-selector-tag { color: #8959a8; } .hljs { display: block; overflow-x: auto; color: #4d4d4c; padding: 0.5em; } .hljs-emphasis { font-style: italic; } .hljs-strong { font-weight: bold; }
+</style>
+<style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="admin-guide">Admin Guide</h1>
+<h2 id="package-installation">Package Installation</h2>
+<ul>
+<li><strong>(Required) <a href="https://chorussolutions.visualstudio.com/Charity%20CRM/_build?definitionId=343&amp;view=buildsHistory">Communication Consent Adapter For Click Dimensions</a> (Latest Version)</strong>: Integrates the Communication Consent solution with Click Dimensions
+<ul>
+<li><strong>(Required) <a href="https://chorussolutions.visualstudio.com/Charity%20CRM/_build?definitionId=78&amp;view=buildsHistory">Workflow Libraries</a> (Latest Version)</strong>: Useful Generic Plugins that can be used as workflow activities.</li>
+<li><strong>(Required) <a href="http://clickdimensions.com/">Click Dimensions</a> (8.1.1.0 &lt;)</strong>: Marketing solution for Microsoft Dynamics CRM.</li>
+<li><strong>(Required) <a href="https://chorussolutions.visualstudio.com/Charity%20CRM/_build?definitionId=294&amp;view=buildsHistory">Communication Consent</a> (Latest Version)</strong>: Allows consent to be given by customers for GDPR.</li>
+</ul>
+</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<p><em>There is no configuration that can be performed on this solution.</em></p>
+<h2 id="custom-integration">Custom Integration</h2>
+<p><em>There is no custom integration that can be configured on this solution.</em></p>
+<h2 id="administration">Administration</h2>
+<p><em>There is no administration that can be performed on this solution.</em></p>
+<h2 id="sercurity">Sercurity</h2>
+<p><em>There are no security requirements for this solution.</em></p>
+<h1 id="user-guide">User Guide</h1>
+<h2 id="overview">Overview</h2>
+<p>A collection of workflows created to facilitate the automatic incrementation of the <em>Number of consent requests sent</em> and <em>Last request sent on</em>.</p>
+<h2 id="interface">Interface</h2>
+<p><em>There are no interface changes for this solution.</em></p>
+<h2 id="functionality">Functionality</h2>
+<h3 id="click-dimensions-adapter">Click Dimensions Adapter</h3>
+<p>An adaptor has also been built for integration with Click Dimension. This adaptor has no relation to Click Dimensions so you should be able to update the software without any impact on this adaptor. The following will explain how to use this functionality, you will need to have a basic knowledge of Click Dimensions.</p>
+<p>This adaptor is very straight forward and is dependent on the Click Dimension Email Template. This allows you to create an Email Template for Communication Consent and then use it for multiple Email Sends. To do this you will need to do the following:</p>
+<ol>
+<li>
+<p>Locate your Click Dimensions Email Template.</p>
+</li>
+<li>
+<p>Click on the Run Workflow button on the record ribbon.</p>
+<p><img src="file:///c%3A/Repos/CommunicationConsentClickDimensions/help/ClickDimensionAdaptor_F1.png" alt="Click_F1"></p>
+</li>
+<li>
+<p>Select the “Email Template | On Demand | Add Communication Consent Tag” workflow and click Add, then click Ok</p>
+</li>
+</ol>
+<p>This should now find that the tag field is populated with “Communication Consent” in addition to any other tags you have in the field. It’s very important that this tag contain exactly “Communication Consent” if this is altered in any way then the adaptor won’t run.</p>
+<p>When a Sent Email is created in the system then workflow will be run to that will update the Last Request Sent On and the Number Sent on the Lead, Contact and/or Account.</p>
+<p>This workflow (&quot;Sent Email | Create | Update Customer Communication Consent Details&quot;) can also be run on demand on Sent Email if you need to do a back population of data for records that you have missed. Make sure you are certain that you have the correct records before doing this as it will always increment the number sent, if you have any doubt then contact your system administrator before proceeding.</p>
+<h3 id="managed-communication-consent-url">Managed Communication Consent URL</h3>
+<p>Constructing a managed communication consent URL allows you to give a customer a specific link that they can then use to update their Communication Preferences in your CRM system.</p>
+<h4 id="creating-a-dynamic-url-in-click-dimensions">Creating a Dynamic URL in Click Dimensions</h4>
+<p>This URL is going to be to be very similar to the basic URL as most of the values are going to be fixed. If you are planning on doing any kind of bulk operation in Click Dimensions then you are going to need a dynamic GUID in your URL. To do this you will need to use FreeMarker; information on how to use it in Click Dimensions can be found here:</p>
+<ul>
+<li><a href="https://support.clickdimensions.com/hc/en-us/articles/115001156193-Personalize-Email-Subject-Lines">Email Subject Lines</a></li>
+<li><a href="https://support.clickdimensions.com/hc/en-us/articles/115001162753-FreeMarker-Personalization-Menu">Personalization Menu</a></li>
+</ul>
+<p>Here is an example of what you will need to create.</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://examplesite.com/manage-communication-consent?customer=${Recipient.contact.contactid[0]!}type=contact&amp;sourceName=Website&amp;sourceRef=MyEmailSend"</span>&gt;</span>Link Text<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</div></code></pre>
+<p>Information on how to create a link using FreeMarker can be found here:</p>
+<ul>
+<li><a href="http://blog.clickdimensions.com/dynamic-content-and-links/">Dynamic Content Links Guide</a></li>
+<li><a href="https://support.clickdimensions.com/hc/en-us/articles/115001168234">Click Common Uses Reference</a></li>
+</ul>
+<p>You may also want to use condition statements if you are sending to multiple entity’s (Contacts, Accounts, Leads) so the correct type of link is selected. Here is an example.</p>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">#assign</span> <span class="hljs-attr">contact</span>=<span class="hljs-string">Recipient.contact.contactid[0]!</span>"<span class="hljs-attr">null</span>"/&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">#assign</span> <span class="hljs-attr">account</span>=<span class="hljs-string">Recipient.account.accountid[0]!</span>"<span class="hljs-attr">null</span>"/&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">#assign</span> <span class="hljs-attr">lead</span>=<span class="hljs-string">Recipient.lead.leadid[0]!</span>"<span class="hljs-attr">null</span>"/&gt;</span> 
+
+<span class="hljs-tag">&lt;<span class="hljs-name">#if</span> <span class="hljs-attr">contact</span>!=<span class="hljs-string">"null"</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://examplesite.com/manage-communication-consent?customer=${Recipient.contact.contactid[0]!}type=contact&amp;sourceName=Website&amp;sourceRef=MyEmailSend"</span>&gt;</span>Link Text<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">#elseif</span> <span class="hljs-attr">account</span>!=<span class="hljs-string">"null"</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://examplesite.com/manage-communication-consent?customer=${Recipient.account.accountid[0]!}type=account&amp;sourceName=Website&amp;sourceRef=MyEmailSend"</span>&gt;</span>Link Text<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">#elseif</span> <span class="hljs-attr">lead</span>!=<span class="hljs-string">"null"</span>&gt;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://examplesite.com/manage-communication-consent?customer=${Recipient.lead.leadid[0]!}type=lead&amp;sourceName=Website&amp;sourceRef=MyEmailSend"</span>&gt;</span>Link Text<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">#if</span>&gt;</span>
+</div></code></pre>
+<p>Information on how to create conditional statements in FreeMarker can be found here:</p>
+<ul>
+<li><a href="https://support.clickdimensions.com/hc/en-us/articles/115001168194-FreeMarker-Conditional-Statements">Click Conditional Statements Reference</a></li>
+<li><a href="https://freemarker.apache.org/docs/ref_directive_if.html">if,else,ifelse FreeMarker Manual</a></li>
+<li><a href="https://freemarker.apache.org/docs/ref_directive_switch.html">switch,case,default,break FreeMarker Manual</a></li>
+<li><a href="https://freemarker.apache.org/docs/dgui_template_exp.html#dgui_template_exp_comparison">Comparison Operators FreeMarker Manual</a></li>
+</ul>
+<h1 id="document-information">Document Information</h1>
+<p><strong>Solution Version:</strong></p>
+<p>Communication Consent Click Adapter : 1.5.0.7</p>
+<p><strong>Last Updated By:</strong></p>
+<p>Courtney Freemantle</p>
+<p><strong>Last Updated On:</strong></p>
+<p>14/09/2018 10:17</p>
+
+    </body>
+    </html>

@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    {
+      "assemblypath": "bin\\Debug"
+    }
+  ]
+}

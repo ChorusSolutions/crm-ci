@@ -1,0 +1,13 @@
+queue: Hosted VS2017
+
+variables:
+  ConnectionString: 'ServiceUri=https://crmrhythmdev.chorus.co:446/VanillaClickDimensions/XRMServices/2011/Organization.svc; Domain=CHORUSIT; Username=crm.deploymentadmin; Password='
+  SolutionName: 'CommunicationConsentClickAdapter'
+
+steps:
+
+  - script: echo running demo ci build
+
+  - template: template/crm-ci.yml
+    parameters:
+      crmSolutionName: CommunicationConsentClickAdapter

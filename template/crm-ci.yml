@@ -1,0 +1,68 @@
+parameters:
+  slnPath: '**/*.sln'
+  crmSolutionName: ''
+  nugetFeedGuid: '5733624b-8b6f-4e00-9220-90d2fb25000d'
+  artifactName: 'drop'
+
+steps:
+
+  - task: NuGetCommand@2
+    displayName: 'NuGet restore'
+    inputs:
+      vstsFeed: ${{ parameters.nugetFeedGuid }}
+
+  - task: DeleteFiles@1
+    displayName: 'Delete jasmine sample files'
+    inputs:
+      SourceFolder: '**\packages\JasmineTest.2.2.0\Content\Scripts'
+      Contents: 'jasmine-samples'
+
+  - task: VSBuild@1
+    displayName: 'Build solution'
+    inputs:
+      solution: ${{ parameters.slnPath }}
+      configuration: Release
+
+  - task: VSTest@1
+    displayName: 'Test Assemblies'
+    inputs:
+      testAssembly: '**/**/*Spec.js'
+      runInParallel: False
+      vsTestVersion: latest
+      pathtoCustomTestAdapters: '**\packages'
+
+  - task: DeleteFiles@1
+    displayName: 'Delete files from $/$(Build.Repository.Name)/build'
+    inputs:
+      SourceFolder: 'demo/Dynamics.Consent.Click/build'
+      Contents: '**'
+
+  - task: BatchScript@1
+    displayName: 'Run script .../pack.bat'
+    inputs:
+      filename: demo/Dynamics.Consent.Click/Dynamics.Consent.Click.Runners/pack.bat
+      workingFolder: demo/Dynamics.Consent.Click/Dynamics.Consent.Click.Runners
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+      SourceFolder: demo/Dynamics.Consent.Click/Dynamics.Consent.Click.Runners
+      Contents: '**.zip'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+      CleanTargetFolder: true
+
+  - task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMToolInstaller.MSCRMToolInstaller@9
+    displayName: 'MSCRM Tool Installer'
+
+  - task: WaelHamze.xrm-ci-framework-build-tasks.MSCRMSetVersion.MSCRMSetVersion@10
+    displayName: 'MSCRM Set Version (for CRM Solution)'
+    inputs:
+      crmConnectionString: '$(ConnectionString)$(Password)'
+      solutionName: ${{ parameters.crmSolutionName }}
+      versionNumber: '$(Build.BuildNumber)'
+      condition: and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact'
+    inputs:
+      ArtifactName: ${{ parameters.artifactName }}

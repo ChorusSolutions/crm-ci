@@ -1,0 +1,137 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Data", "Dynamics.Consent.Click\Dynamics.Consent.Click.Data\Dynamics.Consent.Click.Data.csproj", "{1459C3B0-202C-4710-98BB-038FB7012406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Demo", "Dynamics.Consent.Click\Dynamics.Consent.Click.Demo\Dynamics.Consent.Click.Demo.csproj", "{7AA27C3C-E937-4A92-8055-CAAEC36995FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Logic", "Dynamics.Consent.Click\Dynamics.Consent.Click.Logic\Dynamics.Consent.Click.Logic.csproj", "{537A6A3F-44E7-4A49-867F-A6F80175887B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Logic.Tests", "Dynamics.Consent.Click\Dynamics.Consent.Click.Logic.Tests\Dynamics.Consent.Click.Logic.Tests.csproj", "{71A7B03D-B661-4577-AB85-9CACE06A9D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Models", "Dynamics.Consent.Click\Dynamics.Consent.Click.Models\Dynamics.Consent.Click.Models.csproj", "{FD3E3B3D-368C-413D-8981-1840C3905872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Plugins", "Dynamics.Consent.Click\Dynamics.Consent.Click.Plugins\Dynamics.Consent.Click.Plugins.csproj", "{F16EBFBA-EF26-4A95-8256-D0699D65E680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Plugins.Tests", "Dynamics.Consent.Click\Dynamics.Consent.Click.Plugins.Tests\Dynamics.Consent.Click.Plugins.Tests.csproj", "{7E0BB05F-43FA-4600-A303-75CF58B8D7B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Services", "Dynamics.Consent.Click\Dynamics.Consent.Click.Services\Dynamics.Consent.Click.Services.csproj", "{745AB2F8-8D47-4333-955C-4DCE3E21CDD4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Dynamics.Consent.Click.Solution", "Dynamics.Consent.Click\Dynamics.Consent.Click.Solution\", "{D68AD7A2-6F7E-45A5-8122-A5B9D8B60A94}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53519"
+		Debug.AspNetCompiler.PhysicalPath = "Dynamics.Consent.Click\Dynamics.Consent.Click.Solution\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53519\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53519"
+		Release.AspNetCompiler.PhysicalPath = "Dynamics.Consent.Click\Dynamics.Consent.Click.Solution\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53519\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53519"
+		SlnRelativePath = "Dynamics.Consent.Click\Dynamics.Consent.Click.Solution\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Dynamics.Consent.Click.Webresources", "Dynamics.Consent.Click\Dynamics.Consent.Click.Webresources\", "{50155B7D-31D0-461D-83DD-08D071010776}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53520"
+		Debug.AspNetCompiler.PhysicalPath = "Dynamics.Consent.Click\Dynamics.Consent.Click.Webresources\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53520\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53520"
+		Release.AspNetCompiler.PhysicalPath = "Dynamics.Consent.Click\Dynamics.Consent.Click.Webresources\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53520\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53520"
+		SlnRelativePath = "Dynamics.Consent.Click\Dynamics.Consent.Click.Webresources\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Workflows", "Dynamics.Consent.Click\Dynamics.Consent.Click.Workflows\Dynamics.Consent.Click.Workflows.csproj", "{EE8C37B0-21F2-483F-BCAF-7509B3C86097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Workflows.Tests", "Dynamics.Consent.Click\Dynamics.Consent.Click.Workflows.Tests\Dynamics.Consent.Click.Workflows.Tests.csproj", "{C6B7061B-E075-41AC-B737-C1CB76888931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamics.Consent.Click.Runners", "Dynamics.Consent.Click\Dynamics.Consent.Click.Runners\Dynamics.Consent.Click.Runners.csproj", "{D930CCBF-7272-4081-AA26-B58DD94F094D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1459C3B0-202C-4710-98BB-038FB7012406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1459C3B0-202C-4710-98BB-038FB7012406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1459C3B0-202C-4710-98BB-038FB7012406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1459C3B0-202C-4710-98BB-038FB7012406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA27C3C-E937-4A92-8055-CAAEC36995FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA27C3C-E937-4A92-8055-CAAEC36995FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA27C3C-E937-4A92-8055-CAAEC36995FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA27C3C-E937-4A92-8055-CAAEC36995FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537A6A3F-44E7-4A49-867F-A6F80175887B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537A6A3F-44E7-4A49-867F-A6F80175887B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537A6A3F-44E7-4A49-867F-A6F80175887B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537A6A3F-44E7-4A49-867F-A6F80175887B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A7B03D-B661-4577-AB85-9CACE06A9D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A7B03D-B661-4577-AB85-9CACE06A9D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A7B03D-B661-4577-AB85-9CACE06A9D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A7B03D-B661-4577-AB85-9CACE06A9D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3E3B3D-368C-413D-8981-1840C3905872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3E3B3D-368C-413D-8981-1840C3905872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3E3B3D-368C-413D-8981-1840C3905872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3E3B3D-368C-413D-8981-1840C3905872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16EBFBA-EF26-4A95-8256-D0699D65E680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16EBFBA-EF26-4A95-8256-D0699D65E680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16EBFBA-EF26-4A95-8256-D0699D65E680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16EBFBA-EF26-4A95-8256-D0699D65E680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0BB05F-43FA-4600-A303-75CF58B8D7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0BB05F-43FA-4600-A303-75CF58B8D7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0BB05F-43FA-4600-A303-75CF58B8D7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0BB05F-43FA-4600-A303-75CF58B8D7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745AB2F8-8D47-4333-955C-4DCE3E21CDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745AB2F8-8D47-4333-955C-4DCE3E21CDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745AB2F8-8D47-4333-955C-4DCE3E21CDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745AB2F8-8D47-4333-955C-4DCE3E21CDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68AD7A2-6F7E-45A5-8122-A5B9D8B60A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68AD7A2-6F7E-45A5-8122-A5B9D8B60A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68AD7A2-6F7E-45A5-8122-A5B9D8B60A94}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68AD7A2-6F7E-45A5-8122-A5B9D8B60A94}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{50155B7D-31D0-461D-83DD-08D071010776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50155B7D-31D0-461D-83DD-08D071010776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50155B7D-31D0-461D-83DD-08D071010776}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{50155B7D-31D0-461D-83DD-08D071010776}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EE8C37B0-21F2-483F-BCAF-7509B3C86097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8C37B0-21F2-483F-BCAF-7509B3C86097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8C37B0-21F2-483F-BCAF-7509B3C86097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8C37B0-21F2-483F-BCAF-7509B3C86097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B7061B-E075-41AC-B737-C1CB76888931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B7061B-E075-41AC-B737-C1CB76888931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B7061B-E075-41AC-B737-C1CB76888931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B7061B-E075-41AC-B737-C1CB76888931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D930CCBF-7272-4081-AA26-B58DD94F094D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D930CCBF-7272-4081-AA26-B58DD94F094D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D930CCBF-7272-4081-AA26-B58DD94F094D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D930CCBF-7272-4081-AA26-B58DD94F094D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64071E42-FF7E-4C4D-AABE-49793B5307E5}
+	EndGlobalSection
+EndGlobal

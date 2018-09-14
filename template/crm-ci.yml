@@ -45,7 +45,8 @@ steps:
 
   - task: CopyFiles@2
     displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
-    condition: and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: |
+      and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
     inputs:
       SourceFolder: demo/Dynamics.Consent.Click/Dynamics.Consent.Click.Runners
       Contents: '**.zip'
@@ -61,7 +62,8 @@ steps:
       crmConnectionString: '$(ConnectionString)$(Password)'
       solutionName: ${{ parameters.crmSolutionName }}
       versionNumber: '$(Build.BuildNumber)'
-    condition: and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: |
+      and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact'
